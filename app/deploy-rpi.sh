@@ -18,7 +18,7 @@ cp -r ../front/dist/* ./public
 ./bin/statik -f
 
 GOARCH=arm go build -o rpi-app
-
+cp rpi-app ../bin
 scp rpi-app pi@192.168.0.100:/home/pi/
 
 # scp rpi-app pi@192.168.0.160:/home/pi/tmp/

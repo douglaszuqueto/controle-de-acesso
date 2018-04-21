@@ -1,3 +1,5 @@
+export GOPATH=$(pwd)
+
 # Build the front-end application
 
 yarn --cwd ../front run build
@@ -13,3 +15,5 @@ cp -r ../front/dist/* ./public/
 ./bin/statik -f
 
 go build -o app
+
+cp app ../bin
