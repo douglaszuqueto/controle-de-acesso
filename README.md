@@ -109,6 +109,21 @@ Binário que será desenvolvido para manipular todos *endpoints* da aplicação 
 
 ### 4 - database
 
+O banco de dados utilizado foi o **PostgreSQL** - um banco que fazia algum tempo que queria validar em 1 projeto :)
+
+Confira abaixo a estrutura do projeto CDA.
+
+![img](https://raw.githubusercontent.com/douglaszuqueto/controle-de-acesso/master/database/estrutura.png)
+
+Em resumo, o projeto se dá pela seguinte forma:
+
+* administradores para acessar o painel
+* usuários que por sua vez podem possuir diversas tags
+* devices - podem ser catracas, portas de acesso dentre outros cenários
+* tais tags são associadas a devices, assim liberando ou proibindo o acesso daquela tag específica e que pertence a um usuario X
+
+Demais informações serão descritas na respectiva pasta *database*
+
 ### 5 - firmware
 
 ### 6 - front
