@@ -136,6 +136,8 @@ Já o firmware **reader** é como se fosse um *Plus*, você poderá ter um hardw
 
 ### 7 - systemd
 
+O **systemd** será utilizado quando seu sistema operacional tiver suporte e você queira que, ao ligar/reiniciar seu servidor o back-end seja iniciado automaticamente, ou, em caso de falhas, o mesmo seja reiniciado.
+
 **Level 2**
 ```
 ~/projetos/controle-de-acesso on  master! ⌚ 14:44:44
