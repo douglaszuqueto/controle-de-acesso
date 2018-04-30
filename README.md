@@ -143,7 +143,7 @@ Já o firmware **reader** é como se fosse um *Plus*, você poderá ter um hardw
 
 O **systemd** será utilizado quando seu sistema operacional tiver suporte e você queira que, ao ligar/reiniciar seu servidor o back-end seja iniciado automaticamente, ou, em caso de falhas, o mesmo seja reiniciado.
 
-**Level 2**
+**Lista de diretórios mais detalhada**
 ```
 ~/projetos/controle-de-acesso on  master! ⌚ 14:44:44
 $ tree -L 2
@@ -202,7 +202,6 @@ $ tree -L 2
 
 26 directories, 25 files
 ```
-
 
 ## Fluxo
 
