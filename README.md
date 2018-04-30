@@ -6,13 +6,13 @@
 
 ## Índice
 
-- [Introdução](#introducao)
+- [Introdução](#introdução)
 - [Materiais](#materiais)
 - [Tecnologias](#tecnologias)
-- [Organização](#organizacao)
+- [Organização](#organização)
 - [Fluxo](#fluxo)
 - [Rodando o projeto](#rodando-o-projeto)
-- [Referências](#referencias)
+- [Referências](#referências)
 
 
 ## Introdução
