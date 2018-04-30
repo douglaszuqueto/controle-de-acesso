@@ -126,6 +126,12 @@ Demais informações serão descritas na respectiva pasta *database*
 
 ### 5 - firmware
 
+A pasta firmware contem 2 subpastas, são elas: **cda** e **reader**.
+
+O firmware **cda** é o principal. Ele que rodará no seu hardware principal - catracas, portas de acesso e etc.
+
+Já o firmware **reader** é como se fosse um *Plus*, você poderá ter um hardware adicional no balcão - por exemplo, para realizar o cadastro de tags. Então este firmware em conjunto com um nodemcu e um leitor rfid irá preencher automaticamente o **uuid** quando a tag for lida na tela de cadastro da Dashboard.
+
 ### 6 - front
 
 ### 7 - systemd
