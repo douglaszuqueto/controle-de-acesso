@@ -93,6 +93,8 @@ Conterá todo back-end da aplicação, ou seja, tudo que é necessário para rea
 
 ### 2 - bin
 
+Pasta responsável por armazenar os binários(aplicação compilada) para arquitetura **Linux 64** e **ARM(raspberry)**
+
 ### 3 - cli
 
 ### 4 - database
