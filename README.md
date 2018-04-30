@@ -207,6 +207,16 @@ $ tree -L 2
 
 ## Rodando o projeto
 
+### Preparando o ambiente
+
+### Broker MQTT - Mosquitto
+
+### Banco de dados - PostgreSQL
+
+### Colocando rodar pela 1º vez
+
+### Configurando para iniciar com o Sistema Operacional
+
 ## Resultados
 
 ## Referências
