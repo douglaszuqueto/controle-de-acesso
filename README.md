@@ -99,7 +99,7 @@ Pasta responsável por armazenar os binários(aplicação compilada) para arquit
 
 Binário que será desenvolvido para manipular todos *endpoints* da aplicação através da linha de comando.
 
-**Ex: **
+**Ex:**
 
 * 1º Criar uma tag
 * 2º Associar a um usuário
