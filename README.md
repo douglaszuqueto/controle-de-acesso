@@ -13,6 +13,7 @@
 - [Organização](#organização)
 - [Fluxo](#fluxo)
 - [Rodando o projeto](#rodando-o-projeto)
+- [Resultados](#resultados)
 - [Referências](#referências)
 
 
@@ -69,6 +70,12 @@ Abaixo segue uma seção resumida dos materiais principais que foram utilizadas 
 
 ## Rodando o projeto
 
+## Resultados
+
 ## Referências
 
 - [Controle de acesso utilizando NodeMCU, RFID, MQTT e Banco de Dados MySQL](https://github.com/douglaszuqueto/esp8266-rfid-banco-de-dados)
+
+# Gostou do projeto?
+
+Se você curtiu o projeto e quer trocar uma ideia, foi criado um grupo no **Telegram** para debate! - [clique aqui para participar](https://t.me/joinchat/BPOe2hAc3mNcw_y7f0qipg).
