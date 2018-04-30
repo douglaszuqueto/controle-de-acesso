@@ -89,6 +89,8 @@ Num primeiro momento, o projeto é formado por **7 pastas** - podendo crescer fu
 
 ### 1 - app
 
+Conterá todo back-end da aplicação, ou seja, tudo que é necessário para realizar o build da aplicação e 'colocar em produção'. Possui 3 scripts(em bash mesmo) para colocar todo o projeto rodar em 3 ambientes: **Docker**, **Local** e na **Raspberry Pi**.
+
 ### 2 - bin
 
 ### 3 - cli
