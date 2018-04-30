@@ -32,20 +32,18 @@ Desenvolver tal projeto que seja de fácil implementação - tanto no que tange 
 
 Abaixo segue uma seção resumida dos materiais principais que foram utilizadas no decorrer do desenvolvimento do projeto.
 
-### Embarcado
-
-* NodeMCU
-* Rfid Mfrc522 Mifare
-
-### Servidor
-
-* Raspberry Pi 3
-* Raspberry Pi Zero W
-* Servidor em Nuvem
+* Embarcado
+    * NodeMCU
+    * Rfid Mfrc522 Mifare
+* Servidor
+    * Raspberry Pi 3
+    * Raspberry Pi Zero W
+    * Servidor em Nuvem
 
 **Observação:** No que tange servidor, apenas um item citado acima basta! Detalharei com mais calma em outro tópico.
 
 ## Tecnologias
+
 
 ## Organização
 
