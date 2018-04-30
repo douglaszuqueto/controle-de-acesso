@@ -10,6 +10,7 @@
 - [Objetivo](#objetivo)
 - [Materiais](#materiais)
 - [Tecnologias](#tecnologias)
+- [Arquitetura](#arquitetura)
 - [Organização](#organização)
 - [Fluxo](#fluxo)
 - [Rodando o projeto](#rodando-o-projeto)
@@ -63,6 +64,10 @@ Abaixo segue uma seção resumida dos materiais principais que foram utilizadas 
     * [MQTT.js](https://github.com/mqttjs/MQTT.js)
     * [Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
     * [Sweet Alert 2](https://github.com/sweetalert2/sweetalert2)
+
+## Arquitetura
+
+inserir diagrama geral aqui
 
 ## Organização
 
