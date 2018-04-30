@@ -66,6 +66,102 @@ Abaixo segue uma seção resumida dos materiais principais que foram utilizadas 
 
 ## Organização
 
+**Level 1**
+```
+~/projetos/controle-de-acesso on  master ⌚ 14:43:36
+$ tree -L 1
+.
+├── app
+├── bin
+├── cli
+├── database
+├── firmware
+├── front
+├── README.md
+└── systemd
+
+7 directories, 1 file
+```
+
+Num primeiro momento, o projeto é formado por **7 pastas** - podendo crescer futuramente. 
+
+**Observação:** Detalhes mais 'aprofundados' de cada pasta será abordado em um **README** dentro do sua respectiva pasta.
+
+### 1 - app
+
+### 2 - bin
+
+### 3 - cli
+
+### 4 - database
+
+### 5 - firmware
+
+### 6 - front
+
+### 7 - systemd
+
+**Level 2**
+```
+~/projetos/controle-de-acesso on  master! ⌚ 14:44:44
+$ tree -L 2
+.
+├── app
+│   ├── app
+│   ├── bin
+│   ├── config
+│   ├── deploy-docker.sh
+│   ├── deploy-local.sh
+│   ├── deploy-rpi.sh
+│   ├── Dockerfile
+│   ├── handlers
+│   ├── main.go
+│   ├── models
+│   ├── mqtt
+│   ├── pkg
+│   ├── public
+│   ├── README.md
+│   ├── routes.go
+│   ├── services
+│   ├── src
+│   ├── statik
+│   └── utils
+├── bin
+│   ├── app
+│   └── README.md
+├── cli
+│   └── README.md
+├── database
+│   ├── controle-de-acesso.mwb
+│   ├── controle-de-acesso.mwb.bak
+│   ├── estrutura.png
+│   ├── README.md
+│   └── sistema.sql
+├── firmware
+│   ├── cda
+│   └── reader
+├── front
+│   ├── build
+│   ├── config
+│   ├── dist
+│   ├── Dockerfile
+│   ├── index.html
+│   ├── node_modules
+│   ├── package.json
+│   ├── README.md
+│   ├── src
+│   ├── static
+│   └── yarn.lock
+├── README.md
+└── systemd
+    ├── cda
+    ├── cda.service
+    └── README.md
+
+26 directories, 25 files
+```
+
+
 ## Fluxo
 
 ## Rodando o projeto
