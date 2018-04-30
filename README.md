@@ -207,11 +207,28 @@ $ tree -L 2
 
 ## Rodando o projeto
 
+Neste tópico, tudo que abordar Sistema Operacional, estarei me baseando em **Debian/Ubuntu**, mesmo tendo como distro principal o Fedora. Tudo isso pois como o foco de servidor é na Raspberry Pi, sabemos que ela é baseada no Debian, então facilita tudo :).
+
+Mas se você quer rodar numa distro diferente, não tem problemas, o que mais muda mesmo é o **gerenciador de pacotes**, de resto é tranquilo.
+
+Saliento também, que terá 2 ambientes, ou seja, tem um ambiente no qual o build é gerado por você e o cenário no qual você pode aproveitar os binários que estarão na **pasta bin**.
+
 ### Preparando o ambiente
+
+Para começar, tenha seu ambiente atualizado :)
+
+```
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo apt-get install vim git wget
+```
 
 ### Broker MQTT - Mosquitto
 
 ### Banco de dados - PostgreSQL
+
+### Realizando build do projeto
 
 ### Colocando rodar pela 1º vez
 
