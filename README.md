@@ -226,6 +226,48 @@ sudo apt-get install vim git wget
 
 ### Broker MQTT - Mosquitto
 
+```
+sudo apt-get install mosquitto
+```
+
+No diretório **/etc/mosquitto/conf.d** crie o arquivo *cda.conf*
+
+```
+sudo vim /etc/mosquitto/conf.d/cda.conf
+```
+
+Adicione o seguinte conteudo dentro do arquivo em um editor de sua preferência:
+
+```
+# Configurations
+
+allow_anonymous true
+
+log_type error
+log_type warning
+log_type notice
+log_type information
+log_type debug
+
+# MQTT
+
+listener 1883
+
+# MQTT Websockets
+
+listener 8083
+protocol websockets
+```
+
+Caso você queira utilizar portas diferentes fique a vontade para mudar. Porém certifique-se que elas não estarão sendo utilizadas por outro serviço.
+
+Para atualizar as configurações do mosquitto você precisa dar um restart no daemon do systemd e em seguida reiniciar o serviço do mosquitto.
+
+```
+sudo systemd daemon-reload
+sudo systemd restart mosquitto
+```
+
 ### Banco de dados - PostgreSQL
 
 ### Realizando build do projeto
