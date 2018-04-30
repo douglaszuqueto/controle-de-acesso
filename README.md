@@ -97,6 +97,16 @@ Pasta responsável por armazenar os binários(aplicação compilada) para arquit
 
 ### 3 - cli
 
+Binário que será desenvolvido para manipular todos *endpoints* da aplicação através da linha de comando.
+
+**Ex: **
+
+* 1º Criar uma tag
+* 2º Associar a um usuário
+* 3º Associar a um device
+
+**Observação: Em desenvolvimento**
+
 ### 4 - database
 
 ### 5 - firmware
