@@ -302,7 +302,7 @@ timezone = 'America/Sao_Paulo'
 
 ##### Adicionando regra de autenticação criptografada
 
-No final do arquivo **** adicione a seguinte linha:
+No final do arquivo **/etc/postgresql/9.6/main/pg_hba.conf** adicione a seguinte linha:
 
 ```
 host	all		all		192.168.0.1/24		md5
