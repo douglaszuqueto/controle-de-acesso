@@ -357,7 +357,7 @@ CREATE SCHEMA sistema
     AUTHORIZATION postgres;
 ```
 
-Feito esses passos, é hora de adicionar a real estrutura de nosso sistema, para isso abra [este arquivo](), copie e execute o script.
+Feito esses passos, é hora de adicionar a real estrutura de nosso sistema, para isso abra [este arquivo](https://raw.githubusercontent.com/douglaszuqueto/controle-de-acesso/master/database/sistema.sql), copie e execute o script.
 
 **Observação:** Não adicionei aqui o script, pois tem algumas linhas e iria acabar poluindo a documentação.
 
