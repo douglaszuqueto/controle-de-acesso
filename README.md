@@ -327,6 +327,48 @@ sudo systemctl restart postgresql
 
 ```
 
+##### Criando e 'instalando' a estrutura do banco
+
+Para começar crie um banco de dados chamado **controle-de-acesso**
+
+```sql
+CREATE DATABASE "controle-de-acesso"
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'en_GB.UTF-8'
+    LC_CTYPE = 'en_GB.UTF-8'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+```
+
+Logo em seguida, crie a extensão necessária para geração das chaves primárias das nossas tabelas:
+
+```sql
+CREATE EXTENSION "uuid-ossp"
+    SCHEMA public
+    VERSION "1.1";
+```
+
+Depois de ter criado a extensão, crie o schema **sistema**
+
+```sql
+CREATE SCHEMA sistema
+    AUTHORIZATION postgres;
+```
+
+Feito esses passos, é hora de adicionar a real estrutura de nosso sistema, para isso abra [este arquivo](), copie e execute o script.
+
+**Observação:** Não adicionei aqui o script, pois tem algumas linhas e iria acabar poluindo a documentação.
+
+
+Está pronto, a estrutura necessária para rodar o sistema está completa. Em resumo os passos foram os seguintes:
+
+* 1º Criar o banco de dados: **controle-de-acesso**
+* 2º Adicionar a extensão: **uuid-ossp**
+* 3º Criar o schema: **sistema**
+* 4º Adicionar a estrutura do banco
+
 ### Realizando build do projeto
 
 ### Colocando rodar pela 1º vez
