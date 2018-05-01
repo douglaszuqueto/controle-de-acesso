@@ -270,6 +270,25 @@ sudo systemd restart mosquitto
 
 ### Banco de dados - PostgreSQL
 
+Para realizar a instalação, certifique-se que esteja tudo certo com o pacote. Para isso realize uma busca pelo mesmo.
+
+```
+sudo apt-cache search postgresql-9.6
+```
+
+Sua saída deverá ter um pacote exatamente com o nome pesquisado acima, e também aparecerá outros plugins. Para instalar o banco de dados, basta executar o comando abaixo:
+
+```
+sudo apt-get install postgresql-9.6
+```
+
+#### Configurações adicionais
+
+* Liberando acesso para a rede
+* Adicionando regra de autenticação criptografada
+* Setando timezone
+* Setando senha do usuário default
+
 ### Realizando build do projeto
 
 ### Colocando rodar pela 1º vez
