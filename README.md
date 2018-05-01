@@ -284,10 +284,48 @@ sudo apt-get install postgresql-9.6
 
 #### Configurações adicionais
 
-* Liberando acesso para a rede
-* Adicionando regra de autenticação criptografada
-* Setando timezone
-* Setando senha do usuário default
+##### Liberando acesso para a rede
+No arquivo **/etc/postgresql/9.6/main/postgresql.conf**, procure pela linha que contenha esta nomenclatura: **listen_addresses**. Independente do conteúdo, troque pela seguinte configuração:
+
+```
+listen_addresses = '*'
+```
+
+##### Setando timezone
+No mesmo arquivo anterior, busque por **timezone**, e troque seu conteúdo por:
+
+```
+timezone = 'America/Sao_Paulo'
+```
+
+**Obeservação:** Caso seja de uma timezone diferente, não esqueça de mudar.
+
+##### Adicionando regra de autenticação criptografada
+
+No final do arquivo **** adicione a seguinte linha:
+
+```
+host	all		all		192.168.0.1/24		md5
+```
+
+**Observação:** Não esqueça de mudar sua rede caso a mesma esteja em uma faixa diferente. No meu caso, está na rede 0: 192.168.**0**.1/24
+
+##### Setando senha do usuário default - postgres
+
+```
+# 1º passo
+sudo -u postgres psql
+
+# 2º passo
+ALTER USER postgres PASSWORD = 'root'
+
+# 3º passo
+\q
+
+# 4º passo
+sudo systemctl restart postgresql
+
+```
 
 ### Realizando build do projeto
 
