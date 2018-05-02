@@ -373,18 +373,15 @@ Está pronto, a estrutura necessária para rodar o sistema está completa. Em re
 
 **falar das dependências de desenvolvimento/build**
 
-Como mencionado anteriormente, temos um script para automatizar o processo de build. Veja o script comentado abaixo:
+Como mencionado anteriormente, temos um script para automatizar o processo de build. Será mencionado dois cenário - build local e remoto. Portanto, veja o scripts comentados abaixo:
 
+#### Local
 ```bash
 # Define o GOPATH
 export GOPATH=$(pwd)
 
 # Realiza o build do front-end da aplicação
 yarn --cwd ../front run build
-
-# Em casos remotos, temos que definir através de variáveis de ambiente, qual sera o IP do back-end como também o IP do Broker MQTT
-#CDA_API_HOST="192.168.0.100:3000" CDA_MQTT_HOST="192.168.0.100:8083" yarn --cwd ../front run build
-
 
 # Depois de efetuar o build, os arquivos de produção são copiados para a pasta interna do back-end
 rm -rf ./public
@@ -399,6 +396,34 @@ go build -o app
 
 # A fim de manter sempre um binário no Github, o binário gerado é copiado para a pasta bin
 cp app ../bin
+
+```
+#### Remoto
+```bash
+# Define o GOPATH
+export GOPATH=$(pwd)
+
+# Realiza o build do front-end da aplicação
+# Como é um caso remoto, temos que definir através de variáveis de ambiente, qual sera o IP do back-end como também o IP do Broker MQTT
+CDA_API_HOST="192.168.0.100:3000" CDA_MQTT_HOST="192.168.0.100:8083" yarn --cwd ../front run build
+
+
+# Depois de efetuar o build, os arquivos de produção são copiados para a pasta interna do back-end
+rm -rf ./public
+mkdir public
+cp -r ../front/dist/* ./public/
+
+# Após copiar os arquivos do front-end, é utilizado a ferramenta statik para 'compilar' os assets da aplicação para que depois seja embarcado no back-end
+./bin/statik -f
+
+# Gera o binário da nossa aplicação
+GOARCH=arm go build -o rpi-app
+
+# A fim de manter sempre um binário no Github, o binário gerado é copiado para a pasta bin
+cp rpi-app ../bin
+
+# Efetua a cópia do binário para um host remoto, em nosso caso, é para a raspberry
+scp rpi-app pi@192.168.0.160:/home/pi/tmp/
 
 ```
 
