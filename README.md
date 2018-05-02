@@ -429,6 +429,10 @@ scp rpi-app pi@192.168.0.160:/home/pi/tmp/
 
 ### Colocando rodar pela 1º vez
 
+#### Local
+
+#### Remoto
+
 ### Configurando para iniciar com o Sistema Operacional
 
 ## Resultados
