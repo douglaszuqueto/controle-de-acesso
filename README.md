@@ -205,6 +205,8 @@ $ tree -L 2
 
 ## Fluxo
 
+**inserir diagramas aqui**
+
 ## Rodando o projeto
 
 Neste tópico, tudo que abordar Sistema Operacional, estarei me baseando em **Debian/Ubuntu**, mesmo tendo como distro principal o Fedora. Tudo isso pois como o foco de servidor é na Raspberry Pi, sabemos que ela é baseada no Debian, então facilita tudo :).
