@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	model "../models"
+	model "github.com/douglaszuqueto/controle-de-acesso/app/models"
 )
 
 // LogHandler api endpoints

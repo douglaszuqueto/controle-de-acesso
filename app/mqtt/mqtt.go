@@ -6,7 +6,7 @@ import (
 	"net/url"
 	"time"
 
-	config "../config"
+	config "github.com/douglaszuqueto/controle-de-acesso/app/config"
 	mqtt "github.com/eclipse/paho.mqtt.golang"
 )
 

@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	config "../config"
+	config "github.com/douglaszuqueto/controle-de-acesso/app/config"
 	validator "gopkg.in/go-playground/validator.v9"
 )
 
@@ -20,13 +20,13 @@ func InitConn() {
 	var err error
 	db, err = sql.Open("postgres", connStr)
 
-	db.SetMaxIdleConns(500)
-	db.SetMaxOpenConns(1000)
-	db.SetConnMaxLifetime(5 * time.Minute)
-
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	db.SetMaxIdleConns(500)
+	db.SetMaxOpenConns(1000)
+	db.SetConnMaxLifetime(5 * time.Minute)
 
 	fmt.Println("[BD] Iniciado", config.DbHost)
 

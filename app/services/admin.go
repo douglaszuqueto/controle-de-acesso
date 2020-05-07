@@ -3,8 +3,8 @@ package services
 import (
 	"log"
 
-	model "../models"
 	jwt "github.com/dgrijalva/jwt-go"
+	model "github.com/douglaszuqueto/controle-de-acesso/app/models"
 )
 
 const jwtSecret = "dz"

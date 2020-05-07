@@ -5,8 +5,8 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	models "../models"
-	utils "../utils"
+	models "github.com/douglaszuqueto/controle-de-acesso/app/models"
+	utils "github.com/douglaszuqueto/controle-de-acesso/app/utils"
 )
 
 func sendPong(payload mqttPayload) {

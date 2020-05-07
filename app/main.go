@@ -7,13 +7,13 @@ import (
 	"os/signal"
 	"syscall"
 
+	"github.com/douglaszuqueto/controle-de-acesso/app/config"
+	"github.com/douglaszuqueto/controle-de-acesso/app/models"
+	"github.com/douglaszuqueto/controle-de-acesso/app/mqtt"
+	"github.com/douglaszuqueto/controle-de-acesso/app/utils"
+
 	"github.com/gorilla/handlers"
 	_ "github.com/lib/pq"
-
-	config "./config"
-	model "./models"
-	mqtt "./mqtt"
-	utils "./utils"
 )
 
 func main() {
@@ -23,7 +23,7 @@ func main() {
 	signal.Notify(c, syscall.SIGINT, syscall.SIGTERM)
 	config.LoadConfig()
 
-	model.InitConn()
+	models.InitConn()
 
 	go func() {
 		mqtt.MqttRun()
@@ -31,10 +31,10 @@ func main() {
 
 	go func() {
 		<-c
-		fmt.Println("\n[CDA] Encerrando aplicação...\n")
+		fmt.Println("\n[CDA] Encerrando aplicação...")
 		mqtt.CloseConnection()
-		model.CloseConnection()
-		fmt.Println("\n[CDA] Aplicação encerrada!\n")
+		models.CloseConnection()
+		fmt.Println("\n[CDA] Aplicação encerrada!")
 		os.Exit(0)
 		done <- true
 	}()

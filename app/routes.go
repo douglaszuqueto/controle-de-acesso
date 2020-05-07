@@ -6,11 +6,10 @@ import (
 	"net/http"
 	"os"
 
-	config "./config"
-	handlers "./handlers"
-	utils "./utils"
+	config "github.com/douglaszuqueto/controle-de-acesso/app/config"
+	handlers "github.com/douglaszuqueto/controle-de-acesso/app/handlers"
+	utils "github.com/douglaszuqueto/controle-de-acesso/app/utils"
 
-	_ "./statik"
 	jwt "github.com/dgrijalva/jwt-go"
 	"github.com/gorilla/mux"
 	"github.com/rakyll/statik/fs"

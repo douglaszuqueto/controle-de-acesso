@@ -6,7 +6,7 @@ import (
 
 	"github.com/gorilla/mux"
 
-	model "../models"
+	model "github.com/douglaszuqueto/controle-de-acesso/app/models"
 )
 
 // UserHandler api endpoints

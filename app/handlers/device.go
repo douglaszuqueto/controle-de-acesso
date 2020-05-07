@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	model "../models"
+	model "github.com/douglaszuqueto/controle-de-acesso/app/models"
 
 	"github.com/gorilla/mux"
 )

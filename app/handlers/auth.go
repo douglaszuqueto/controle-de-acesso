@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	model "../models"
-	service "../services"
+	model "github.com/douglaszuqueto/controle-de-acesso/app/models"
+	service "github.com/douglaszuqueto/controle-de-acesso/app/services"
 	"github.com/gorilla/mux"
 )
 
